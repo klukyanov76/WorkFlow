@@ -5,7 +5,8 @@
 #include <string>
 #include <vector>
 #include "../Block.h"
-
+#include "../Exceptions/InvalidNumberOfArguments.h"
+#include <fstream>
 
 class Dump : public Block
 {

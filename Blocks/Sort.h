@@ -1,13 +1,14 @@
 #ifndef WORKFLOW_SORT_H
 #define WORKFLOW_SORT_H
 
-
 #include <list>
 #include <string>
 #include <vector>
 #include "../Block.h"
 #include "../BlockMaker.h"
 #include "../Exceptions/InvalidNumberOfArguments.h"
+
+
 class Sort : public Block
 {
 public:

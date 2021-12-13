@@ -42,3 +42,8 @@
 /cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/a.exe
 /cmake-build-debug/CMakeFiles/WorkFlow.dir/build.make
 /cmake-build-debug/CMakeFiles/clion-environment.txt
+/.idea/.gitignore
+/cmake-build-debug/CMakeFiles/WorkFlow.dir/Blocks/Dump.cpp.obj
+/cmake-build-debug/CMakeFiles/WorkFlow.dir/Blocks/Grep.cpp.obj
+/cmake-build-debug/CMakeFiles/WorkFlow.dir/Blocks/Replace.cpp.obj
+/cmake-build-debug/CMakeFiles/WorkFlow.dir/Blocks/WriteFile.cpp.obj
