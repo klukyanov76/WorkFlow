@@ -28,7 +28,7 @@ public:
         WorkFlowParser parser;
         auto blocks = parser.GetBlocks(in);
         std::list<std::pair<Block*, std::vector<std::string> >> block_objects;
-        for(auto block : blocks)
+        for(auto& block : blocks)
         {
             Block *block_object = BlockFactory::GetInstance().Create(block.first);
             block_objects.emplace_back(block_object, block.second);

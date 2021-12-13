@@ -13,7 +13,7 @@ template<typename T>
 class BlockMaker : public IBlockMaker
 {
 public:
-    BlockMaker(const std::string& key)
+    explicit BlockMaker(const std::string& key)
     {
         BlockFactory::GetInstance().RegisterMaker(key, this);
     }

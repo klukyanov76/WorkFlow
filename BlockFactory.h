@@ -28,7 +28,7 @@ public:
     }
 
 
-    Block* Create(std::string block_name) const
+    Block* Create(std::string& block_name) const
     {
         auto i = _makers.find(block_name);
         if (i == _makers.end())
