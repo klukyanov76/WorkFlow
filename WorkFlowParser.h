@@ -1,6 +1,5 @@
 #ifndef WORKFLOW_WORKFLOWPARSER_H
 #define WORKFLOW_WORKFLOWPARSER_H
-
 #include <iostream>
 #include "istream"
 #include "string"
@@ -94,5 +93,4 @@ public:
         return processed_input;
     }
 };
-
 #endif //WORKFLOW_WORKFLOWPARSER_H
