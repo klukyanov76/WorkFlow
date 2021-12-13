@@ -1,20 +1,17 @@
-#ifndef WORKFLOW_SORT_H
-#define WORKFLOW_SORT_H
-
+#ifndef WORKFLOW_GREP_H
+#define WORKFLOW_GREP_H
 
 #include <list>
 #include <string>
 #include <vector>
 #include "../Block.h"
-#include "../BlockMaker.h"
 
-class Sort : public Block
+class Grep : public Block
 {
-public:
     std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args) override;
-    BlockType GetType() override;
-    ~Sort() = default;
+    virtual BlockType GetType() override;
+    ~Grep() = default;
 };
 
 
-#endif //WORKFLOW_SORT_H
+#endif //WORKFLOW_GREP_H

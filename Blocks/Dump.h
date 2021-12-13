@@ -1,20 +1,18 @@
-#ifndef WORKFLOW_SORT_H
-#define WORKFLOW_SORT_H
-
+#ifndef WORKFLOW_DUMP_H
+#define WORKFLOW_DUMP_H
 
 #include <list>
 #include <string>
 #include <vector>
 #include "../Block.h"
-#include "../BlockMaker.h"
 
-class Sort : public Block
+
+class Dump : public Block
 {
-public:
     std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args) override;
-    BlockType GetType() override;
-    ~Sort() = default;
+    virtual BlockType GetType() override;
+    ~Dump() = default;
 };
 
 
-#endif //WORKFLOW_SORT_H
+#endif //WORKFLOW_DUMP_H
