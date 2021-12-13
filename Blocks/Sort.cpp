@@ -2,7 +2,7 @@
 
 static BlockMaker<Sort> maker("Sort");
 
-std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
+std::list<std::string> Sort::Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
 {
     std::list<std::string> new_text;
     //
@@ -10,7 +10,7 @@ std::list<std::string> Execute(const std::list<std::string> &text, const std::ve
     //
     return new_text;
 }
-BlockType GetType()
+BlockType Sort::GetType()
 {
     return BlockType::INOUT;
 }

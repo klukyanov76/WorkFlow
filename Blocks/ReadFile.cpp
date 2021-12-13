@@ -3,7 +3,7 @@
 
 static BlockMaker<ReadFile> maker("ReadFile");
 
-std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
+std::list<std::string> ReadFile::Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
 {
     if(args.size() < 1)
     {
@@ -15,7 +15,7 @@ std::list<std::string> Execute(const std::list<std::string> &text, const std::ve
     //
     return new_text;
 }
-BlockType GetType()
+BlockType ReadFile::GetType()
 {
     return BlockType::IN;
 }

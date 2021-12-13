@@ -3,11 +3,11 @@
 
 static BlockMaker<Dump> maker("Dump");
 
-std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
+std::list<std::string> Dump::Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
 {
 
 }
-BlockType GetType()
+BlockType Dump::GetType()
 {
     return BlockType::INOUT;
 }

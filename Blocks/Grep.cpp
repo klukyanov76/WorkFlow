@@ -3,11 +3,11 @@
 
 static BlockMaker<Grep> maker("Grep");
 
-std::list<std::string> Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
+std::list<std::string> Grep::Execute(const std::list<std::string> &text, const std::vector<std::string> &args)
 {
 
 }
-BlockType GetType()
+BlockType Grep::GetType()
 {
     return BlockType::INOUT;
 }
