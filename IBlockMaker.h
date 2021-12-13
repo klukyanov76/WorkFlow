@@ -1,6 +1,11 @@
 #ifndef WORKFLOW_IBLOCKMAKER_H
 #define WORKFLOW_IBLOCKMAKER_H
 
+#include <iostream>
+#include <list>
+#include <vector>
+#include <string>
+#include "Block.h"
 
 class IBlockMaker
 {
