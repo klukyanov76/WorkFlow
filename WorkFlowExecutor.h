@@ -27,19 +27,16 @@ public:
     {
         WorkFlowParser parser;
         auto blocks = parser.GetBlocks(in);
-        std::list<std::pair<Block*, std::vector<std::string> >> block_objects; // diff
+        std::list<std::pair<Block*, std::vector<std::string> >> block_objects;
         for(auto block : blocks)
         {
             Block *block_object = BlockFactory::GetInstance().Create(block.first);
             block_objects.emplace_back(block_object, block.second);
         }
-        //check blocks
         CheckBlocks(block_objects);
-        //
         std::list<std::string> text;
         for(auto block_object : block_objects)
         {
-            //text = block_object.first->Execute(text, block_object.second); // diff
             try
             {
                 block_object.first->Execute(text, block_object.second);
